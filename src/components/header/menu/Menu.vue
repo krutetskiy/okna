@@ -6,10 +6,6 @@
         class="dropdown"
       >ПРОДУКЦИЯ</router-link>
       <router-link
-        to="/services"
-        class="dropdown"
-      >УСЛУГИ</router-link>
-      <router-link
         to="/contacts"
         class="dropdown"
       >КОНТАКТЫ</router-link>

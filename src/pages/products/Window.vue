@@ -4,7 +4,7 @@
       src="../../assets/product_1.png"
       alt="#"
     >
-    <div class="title">{{modelValue.title}}</div>
+    <div class="title">{{modelValue.name}}</div>
     <div class="description">{{modelValue.description}}</div>
     <div class="short_wrapper">
       <div class="box">{{modelValue.camera}}</div>
@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #product {
   padding: 0 15px 0 15px;
 }

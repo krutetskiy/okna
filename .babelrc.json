@@ -6,7 +6,10 @@
         "alias": {
           "src": "./src/",
           "assets": "./src/assets",
-          "pages": "./src/pages"
+          "pages": "./src/pages",
+          "models": "./src/models",
+          "api": "./src/api",
+          "components": "./src/components"
         }
       }
     ]

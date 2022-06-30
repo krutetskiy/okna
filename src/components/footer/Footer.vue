@@ -57,6 +57,7 @@ export default {
 
 <style scoped>
 .footer {
+  margin-top: auto;
   background-color: #f1f1f1;
 }
 .container {

@@ -13,7 +13,7 @@
 
 <script>
 import Product from "pages/products/Window.vue";
-import windows from "../../models/window";
+import WindowApi from "api/endpoints/WindowApi";
 
 export default {
   components: {
@@ -21,19 +21,17 @@ export default {
   },
   data() {
     return {
-      windows,
+      windows: null,
     };
+  },
+  async mounted() {
+    var response = await WindowApi.getWindows();
+    this.windows = response.windows;
   },
 };
 </script>
 
 <style scoped>
-#page {
-  margin: 0 0 2% 0;
-  padding: 0px 10% 0px 10%;
-  display: block;
-}
-
 .product_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 33.33333%);
